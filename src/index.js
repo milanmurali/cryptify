@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Test } from './Test';
+import { Provider } from 'react-redux';
 import { Home } from './Cryptify/Home';
+import { store } from './Cryptify/Store.js';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import DashBoard from './Cryptify/DashBoard';
-// import { CoinDetails } from './Cryptify/CoinDetails';
 import CoinDetails from './Cryptify/CoinDetails';
-
-import { Provider } from 'react-redux';
-import { store } from './Cryptify/Store.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,8 +22,7 @@ root.render(
         </Routes>
       </BrowserRouter>
     </Provider>
-    {/* <App /> */}
-    {/* <Test/> */}
+
   </React.StrictMode>
 );
 
